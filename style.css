@@ -3,10 +3,25 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
+    font-size: 20px;
     color: #4C312F;
 }
 
-.background-one{
+body::-webkit-scrollbar {
+    width: 12px;  
+}
+
+body::-webkit-scrollbar-track {
+    background: #4C312F;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #EFB351;
+    border-radius: 20px;
+    border: 2px solid #4C312F;
+}
+
+.background-first{
     position: absolute;
     z-index: -1;
 }
@@ -41,26 +56,166 @@ header > img {
     border-right: 1px solid white;
 }
 
-.mainW{
+.mainWH{
     padding: 29px 44px 29px 44px;
 }
 
-.items{
+.itemsH{
     padding: 29px 30px 29px 30px;
 }
 
-.about{
+.aboutH{
     padding: 29px 67px 29px 67px;
 }
 
-.catalog{
+.catalogH{
     padding: 29px 67px 29px 67px;
 }
 
-.reg{
+.regH{
     padding: 29px 70px 29px 70px;
 }
 
-.contacts{
+.contactsH{
     padding: 29px 32px 29px 32px;
+}
+
+.hello-screen{
+    display: flex;
+    width: 100%;
+    height: 995px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 288px;
+}
+
+.left-text{
+    flex-direction: column;
+}
+
+.light-text{
+    margin: 0;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgba(76, 49, 47, 0.5);
+}
+
+.big-text{
+    margin: 0;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.bottom-line-text{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 155px;
+    height: 3px;
+    background-color: #EFB351;
+    color: transparent;
+}
+
+.left-text-buttons{
+    margin-top: 27px;
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+}
+
+.left-text-button{
+    width: 240px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 47px;
+    font-family: "Jost", sans-serif;
+}
+
+.left-text-button:hover {
+    cursor: pointer;
+}
+
+.buy-now{
+    color: white;
+    background-color: #EFB351;
+    border: none;
+}
+
+.more-info{
+    color: #4C312F;
+    background-color: transparent;
+    border: 3px solid #EFB351;
+}
+
+.items{
+    width: 100%;
+    height: 731px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.items > .head-text{
+    margin-top: 39px;
+    display: flex;
+    font-size: 60px;
+    font-weight: 900;
+    color: #EFB351;
+    justify-content: center;
+}
+
+.items-more-info{
+    width: 240px;
+    height: 46px;
+    font-weight: 700;
+    color: white;
+    background-color: #EFB351;
+    font-size: 25px;
+    border: none;
+    border-radius: 47px;
+    margin-bottom: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.card{
+    display: flex;
+    width: 343px;
+    height: 509px;
+    border: 1px solid #F9A857;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 42px;
+}
+
+.card > div > img {
+    margin-top: 10px;
+}
+
+.banana-cup-img{
+    margin-left: 35px;
+}
+
+.type-of-card{
+    margin: 0;
+    font-size: 25px;
+}
+
+.card-description{
+    margin: 0;
+    font-weight: 300;
+}
+
+.about-us{
+    display: flex;
+    width: 100%;
+    height: 1080px;
+    background-image: url("assets/img/background-image.png");
+    background-size: 2347px 1575px;
+    
 }
