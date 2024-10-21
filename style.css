@@ -1,3 +1,66 @@
 body{
-    width: 1080;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    color: #4C312F;
+}
+
+.background-one{
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid white;
+    height: 85px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img {
+    margin-left: 50px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header-button{
+    border-left: 1px solid white;
+}
+
+.header-button-reg{
+    border-right: 1px solid white;
+}
+
+.mainW{
+    padding: 29px 44px 29px 44px;
+}
+
+.items{
+    padding: 29px 30px 29px 30px;
+}
+
+.about{
+    padding: 29px 67px 29px 67px;
+}
+
+.catalog{
+    padding: 29px 67px 29px 67px;
+}
+
+.reg{
+    padding: 29px 70px 29px 70px;
+}
+
+.contacts{
+    padding: 29px 32px 29px 32px;
 }
