@@ -359,7 +359,7 @@ footer{
     font-size: 40px;
 }
 
-.filters > hr {
+hr {
     background-color: white;
     width: 477px;
     height: 2px;
