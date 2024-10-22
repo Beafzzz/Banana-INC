@@ -237,7 +237,7 @@ header > img {
     margin-top: 159px;
 }
 
-.contacts{
+footer{
     width: 100%;
     height: 265px;
 }
@@ -251,7 +251,7 @@ header > img {
     font-weight: 700;
 }
 
-.contacts{
+#contacts{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -280,7 +280,170 @@ header > img {
 
 /*Дальше стили для каталога*/
 
-.background-first-catalog{
-    position: absolute;
-    z-index: -1;
+.catalog-body{
+    background-image: url("./assets/img/fWindow.png");
+    background-size: 1920px 2222px;
+}
+
+.mainWHB{
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid white;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #4C312F;
+    padding: 29px 44px 29px 44px;
+}
+
+.mainWHB:hover{
+    cursor: pointer;
+}
+
+.filters{
+    display: flex;
+    width: 547px;
+    height: 995px;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+}
+
+.catalog-head{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 52px;
+}
+
+.ropa-filter{
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ropa-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.ropa-filters > ul {
+    list-style: none;
+    margin-right: 150px;
+}
+
+.ropa-filters > ul li {
+    position: relative; 
+}
+
+.ropa-filters > ul li::before {
+    content: ''; 
+    background-image: url('./assets/img/banana-ico.png'); 
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    left: -70px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.ropa{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.filters > hr {
+    background-color: white;
+    width: 477px;
+    height: 2px;
+    border: none;
+}
+
+.banana-filter{
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banana-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.banana-filters > ul {
+    list-style: none;
+    margin-right: 55px;
+}
+
+.banana-filters > ul li {
+    position: relative; 
+}
+
+.banana-filters > ul li::before {
+    content: ''; 
+    background-image: url('./assets/img/banana-ico.png'); 
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    left: -70px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.cup{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.cup-filter{
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cup-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.cup-filters > ul {
+    list-style: none;
+    margin-right: 55px;
+}
+
+.cup-filters > ul li {
+    position: relative; 
+}
+
+.cup-filters > ul li::before {
+    content: ''; 
+    background-image: url('./assets/img/banana-ico.png'); 
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    left: -70px; 
+    top: 50%;
+    transform: translateY(-50%); 
 }
