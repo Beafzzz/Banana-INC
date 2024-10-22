@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 
 header{
     display: flex;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     height: 85px;
     flex-direction: row;
     justify-content: space-between;
@@ -54,11 +54,11 @@ header > img {
 }
 
 .header-button{
-    border-left: 1px solid white;
+    border-left: 2px solid white;
 }
 
 .header-button-reg{
-    border-right: 1px solid white;
+    border-right: 2px solid white;
 }
 
 .mainWH{
@@ -288,7 +288,7 @@ footer{
 .mainWHB{
     border: none;
     background-color: transparent;
-    border-left: 1px solid white;
+    border-left: 2px solid white;
     font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -306,7 +306,7 @@ footer{
     height: 995px;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid white;
+    border-right: 2px solid white;
 }
 
 .catalog-head{
@@ -324,7 +324,8 @@ footer{
     font-size: 50px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 162px;
 }
 
 .ropa-filters{
@@ -363,29 +364,30 @@ hr {
     background-color: white;
     width: 477px;
     height: 2px;
-    border: none;
+    border: 1px solid white;
 }
 
 .banana-filter{
     margin: 0;
-    margin-top: 40px;
     display: flex;
     width: 100%;
     height: 90px;
     font-size: 50px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 190px;
 }
 
 .banana-filters{
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
 .banana-filters > ul {
     list-style: none;
-    margin-right: 55px;
+    margin-right: 48px;
 }
 
 .banana-filters > ul li {
@@ -418,24 +420,24 @@ hr {
 
 .cup-filter{
     margin: 0;
-    margin-top: 40px;
     display: flex;
     width: 100%;
     height: 90px;
     font-size: 50px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 198px;
 }
 
 .cup-filters{
     display: flex;
     flex-direction: row;
+    margin-right: 155px;
 }
 
 .cup-filters > ul {
     list-style: none;
-    margin-right: 55px;
 }
 
 .cup-filters > ul li {
@@ -443,6 +445,50 @@ hr {
 }
 
 .cup-filters > ul li::before {
+    content: ''; 
+    background-image: url('./assets/img/banana-ico.png'); 
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    left: -70px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.car{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.car-filter{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.car-filters{
+    display: flex;
+    flex-direction: row;
+    margin-right: 110px;
+}
+
+.car-filters > ul {
+    list-style: none;
+}
+
+.car-filters > ul li {
+    position: relative; 
+}
+
+.car-filters > ul li::before {
     content: ''; 
     background-image: url('./assets/img/banana-ico.png'); 
     background-size: 50px 50px;
