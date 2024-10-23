@@ -254,6 +254,7 @@ footer{
 #contacts{
     display: flex;
     align-items: center;
+    background-color: white;
     justify-content: space-between;
 }
 
@@ -278,11 +279,18 @@ footer{
     font-size: 25px;
 }
 
-/*Дальше стили для каталога*/
+/*
+    Дальше стили для каталога
+*/
 
 .catalog-body{
     background-image: url("./assets/img/fWindow.png");
     background-size: 1920px 2222px;
+}
+
+.catalog-content{
+    display: flex;
+    flex-direction: row;
 }
 
 .mainWHB{
@@ -498,4 +506,210 @@ hr {
     left: -70px; 
     top: 50%;
     transform: translateY(-50%); 
+}
+
+.cards-catalog{
+    display: flex;
+    width: 1373px;
+    height: 1600px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.cards-catalog::-webkit-scrollbar {
+    width: 12px;  
+}
+
+.cards-catalog::-webkit-scrollbar-track {
+    background: #4C312F;
+}
+
+.cards-catalog::-webkit-scrollbar-thumb {
+    background-color: #EFB351;
+    border-radius: 20px;
+    border: 2px solid #4C312F;
+}
+
+.card-catalog{
+    width: 404px;
+    height: 570px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.card-price-catalog{
+    font-size: 30px;
+    margin: 0;
+}
+
+.card-image-catalog-1{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-1.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-2{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-2.png");
+    background-size: 342px 404px;
+    background-repeat: no-repeat;
+    background-position: 33px 50px;
+}
+
+.card-image-catalog-3{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-size: 334px 404px;
+    background-repeat: no-repeat;
+    background-position: 33px;
+}
+
+.card-image-catalog-4{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-4.png");
+    background-size: 340px 404px;
+    background-repeat: no-repeat;
+    background-position: 33px 30px;
+}
+
+.card-image-catalog-5{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-5.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-6{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-6.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-7{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-7.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-8{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-8.png");
+    background-size: 394px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-9{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-9.png");
+    background-size: 301px 404px;
+    background-repeat: no-repeat;
+    background-position: 55px 30px;
+}
+
+.card-image-catalog-10{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-size: 334px 404px;
+    background-repeat: no-repeat;
+    background-position: 33px;
+}
+
+.card-image-catalog-11{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-5.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-12{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-7.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-13{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-9.png");
+    background-size: 301px 404px;
+    background-repeat: no-repeat;
+    background-position: 55px 30px;
+}
+
+.card-image-catalog-14{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-1.png");
+    background-size: 404px 404px;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.card-image-catalog-15{
+    height: 480px;
+    width: 404px;
+    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-size: 334px 404px;
+    background-repeat: no-repeat;
+    background-position: 33px;
+}
+
+.card-description-catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+}
+
+.card-button-catalog{
+    width: 242px;
+    height: 63px;
+    border-radius: 15px;
+    border: none;
+    background-color: #EFB351;
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
+    color: #4C312F;
+}
+
+.card-button-catalog:hover {
+    cursor: pointer;
+}
+
+#contacts-catalog{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    margin-top: 50px;
 }
