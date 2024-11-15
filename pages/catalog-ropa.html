@@ -12,142 +12,195 @@
 
 </head>
 <body class="catalog-body">
-    <div class="black-back">s</div>
     <header>
-        <img src="../assets/img/logo.png" class="logo">
+        <a href="../index.html"><img src="../assets/img/logo.png" class="logo"></a>
         <ul class="header-buttons">
             <a href="../index.html"><li class="itemsH header-button">Главная</li></a>
             <a href="#items"><li class="itemsH header-button">Наша продукция</li></a>
             <a href="#about"><li class="aboutH header-button">О нас</li></a>
-            <a href="catalog.html"><li class="catalogH header-button">Каталог</li></a>
+            <a href="catalog-ropa.html"><li class="catalogH header-button">Каталог</li></a>
             <a href="#"><li class="regH header-button">Регистрация</li></a>
             <a href="#contacts"><li class="contactsH header-button header-button-reg">Контакты</li></a>
         </ul>
     </header>
 
+    <div id="overlay"></div>
+
     <div class="catalog-content">
-        <div class="filters">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var openOverlayButton = document.getElementById('filter-button');
+            var overlay = document.getElementById('overlay');
+            var filters = document.getElementById('filters-menu')
+
+            // Открытие оверлея
+            openOverlayButton.addEventListener('click', function() {
+                overlay.style.display = 'flex';
+                filters.style.left = "0px";
+            });
+
+            // Закрытие оверлея при клике вне его содержимого
+            window.addEventListener('click', function(event) {
+                if (event.target == overlay) {
+                    overlay.style.display = 'none';
+                    filters.style.left = "-300px";
+                }
+            });
+        });
+        </script>
+
+        <div class="catalog-filter">
+            <button id="filter-button"><img src="../assets/img/arrow-filled.png"></button>
+        </div>
+
+        <div id="filters-menu" class="filters">
+            <img src="../assets/img/arrow-filled.png" class="mobile-arrow-sort">
             <p class="catalog-head">КАТАЛОГ</p>
             <a href="catalog-ropa.html"><p class="ropa-filter">Одежда<img src="../assets/img/arrow-filled.png"></p></a>
-            <div class="ropa-filters">
-            </div>
             <hr align="center">
             <a href="catalog-banana.html"><p class="banana-filter">Бананы<img src="../assets/img/arrow-filled.png"></p></a>
             <hr align="center">
             <a href="catalog-cup.html"><p class="cup-filter">Кружки<img src="../assets/img/arrow-filled.png"></p></a>
             <hr align="center">
-            <div class="cup-filters">
-            </div>
             <a href=""><p class="car-filter">Банан-car<img src="../assets/img/arrow-filled.png"></p></a>
-            <div class="car-filters">
-            </div>
         </div>
 
         <div class="cards-catalog">
             <div class="card-catalog">
+                <a href="./ropa/e1/index.html">
                 <div class="card-image-catalog-ropa-1 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">549р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e2/index.html">
                 <div class="card-image-catalog-ropa-2 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">599р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e3/index.html">
                 <div class="card-image-catalog-ropa-3 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">699р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e4/index.html">
                 <div class="card-image-catalog-ropa-4 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e5/index.html">
                 <div class="card-image-catalog-ropa-5 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e6/index.html">
                 <div class="card-image-catalog-ropa-6 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e7/index.html">
                 <div class="card-image-catalog-ropa-7 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/e8/index.html">
                 <div class="card-image-catalog-ropa-8 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m1/index.html">
                 <div class="card-image-catalog-ropa-9 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m2/index.html">
                 <div class="card-image-catalog-ropa-10 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m3/index.html">
                 <div class="card-image-catalog-ropa-11 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m4/index.html">
                 <div class="card-image-catalog-ropa-12 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m5/index.html">
                 <div class="card-image-catalog-ropa-13 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m6/index.html">
                 <div class="card-image-catalog-ropa-14 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog">
+                <a href="./ropa/m7/index.html">
                 <div class="card-image-catalog-ropa-15 card-image-catalog-size"></div>
                 <div class="card-description-catalog">
                     <p class="card-price-catalog">499р</p>
                     <button class="card-button-catalog">В КОРЗИНУ</button>
                 </div>
+                </a>
             </div>
             <div class="card-catalog-opZ"></div>
         </div>

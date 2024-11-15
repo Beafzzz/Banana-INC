@@ -540,6 +540,10 @@ footer{
 .catalog-body{
     background-image: url("./assets/img/fWindow.png");
     background-size: 1920px 2222px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: "Jost", sans-serif;
 }
 
@@ -547,6 +551,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.mobile-arrow-sort{
+    display: none;
 }
 
 .mainWHB{
@@ -577,6 +585,7 @@ footer{
     font-size: 60px;
     font-weight: 700;
     margin-top: 52px;
+    color: #4C312F;
 }
 
 .ropa-filter{
@@ -818,63 +827,63 @@ hr {
 */
 
 .card-image-catalog-ropa-1{
-    background-image: url("./assets/img/t-shirts/t-shirt-1.png");
+    background-image: url("./pages/ropa/e1/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-2{
-    background-image: url("./assets/img/t-shirts/t-shirt-2.png");
+    background-image: url("./pages/ropa/e2/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-3{
-    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-image: url("./pages/ropa/e3/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-4{
-    background-image: url("./assets/img/t-shirts/t-shirt-4.png");
+    background-image: url("./pages/ropa/e4/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-5{
-    background-image: url("./assets/img/t-shirts/t-shirt-5.png");
+    background-image: url("./pages/ropa/e5/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-6{
-    background-image: url("./assets/img/t-shirts/t-shirt-6.png");
+    background-image: url("./pages/ropa/e6/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-7{
-    background-image: url("./assets/img/t-shirts/t-shirt-7.png");
+    background-image: url("./pages/ropa/e7/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-8{
-    background-image: url("./assets/img/t-shirts/t-shirt-8.png");
+    background-image: url("./pages/ropa/e8/assets/img/clothes.png");
 }
 
 .card-image-catalog-ropa-9{
-    background-image: url("./assets/img/t-shirts/t-shirt-9.png");
+    background-image: url("./pages/ropa/m1/assets/img/hudak.jpg");
 }
 
 .card-image-catalog-ropa-10{
-    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-image: url("./pages/ropa/m1/assets/img/sumka.jpg");
 }
 
 .card-image-catalog-ropa-11{
-    background-image: url("./assets/img/t-shirts/t-shirt-5.png");
+    background-image: url("./pages/ropa/m3/assets/img/kurtka.jpg");
 }
 
 .card-image-catalog-ropa-12{
-    background-image: url("./assets/img/t-shirts/t-shirt-7.png");
+    background-image: url("./pages/ropa/m4/assets/img/swuimsuit.jpg");
 }
 
 .card-image-catalog-ropa-13{
-    background-image: url("./assets/img/t-shirts/t-shirt-9.png");
+    background-image: url("./pages/ropa/m5/assets/img/kepka.jpg");
 }
 
 .card-image-catalog-ropa-14{
-    background-image: url("./assets/img/t-shirts/t-shirt-1.png");
+    background-image: url("./pages/ropa/m6/assets/img/galstuk.jpg");
 }
 
 .card-image-catalog-ropa-15{
-    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+    background-image: url("./pages/ropa/m7/assets/img/clothes.png");
 }
 
 /*
@@ -1049,9 +1058,77 @@ hr {
     margin-top: 50px;
 }
 
+#overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.catalog-filter{
+    display: none;
+}
+
+
+
 @media (min-width: 290px) and (max-width: 440px){
     .filters{
-        display: none;
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        z-index: 100;
+        width: calc(100% / 2);
+        height: 100%;
+        background-color: #EFB351;
+    }
+
+    .catalog-content{
+        flex-direction: column;
+    }
+
+    .catalog-filter{
+        display: block;
+    }
+
+    #filter-button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .filters{
+        gap: 0px;
+    }
+
+    hr{
+        width: 180px;
+    }
+
+    .ropa-filter{
+        gap: 25px;
+    }
+
+    .banana-filter{
+        gap: 25px;
+    }
+
+    .cup-filter{
+        gap: 25px;
+    }
+
+    .car-filter{
+        gap: 25px;
+    }
+
+    .filters p{
+        font-size: 40px;
+    }
+
+    .filters a > p{
+        font-size: 30px;
     }
 
     .cards-catalog{
@@ -1069,7 +1146,7 @@ hr {
     }
 
     .card-description-catalog{
-        gap: calc(100% - 120px);
+        gap: calc(100% - 143px);
         white-space: nowrap;
     }
     
