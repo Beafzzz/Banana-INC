@@ -1,10 +1,25 @@
-body{
+.main-body{
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
     font-size: 20px;
     color: #4C312F;
+    background-image: url("./assets/img/fWindow.png");
+    background-size: 1920px 1080px;
+}
+
+.black-back{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 a{
@@ -12,35 +27,41 @@ a{
     color: #4C312F;
 }
 
-body::-webkit-scrollbar {
+.main-body::-webkit-scrollbar {
     width: 12px;  
 }
 
-body::-webkit-scrollbar-track {
+.main-body::-webkit-scrollbar-track {
     background: #4C312F;
 }
 
-body::-webkit-scrollbar-thumb {
+.main-body::-webkit-scrollbar-thumb {
     background-color: #EFB351;
     border-radius: 20px;
     border: 2px solid #4C312F;
 }
 
-.background-first{
-    position: absolute;
-    z-index: -1;
-}
-
 header{
     display: flex;
     border-bottom: 2px solid white;
+    width: 100%;
     height: 85px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-header > img {
+.logo-placeholder{
+    width: 800px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.hello-screen-img {
+    width: 698px;
+    height: 522px;
     margin-left: 50px;
 }
 
@@ -51,14 +72,10 @@ header > img {
     list-style: none;
     font-weight: 500;
     font-size: 20px;
-}
-
-.header-button{
-    border-left: 2px solid white;
-}
-
-.header-button-reg{
-    border-right: 2px solid white;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
 }
 
 .mainWH{
@@ -125,12 +142,17 @@ header > img {
     margin-top: 27px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 29px;
 }
 
 .left-text-button{
     width: 240px;
     height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 25px;
     border-radius: 47px;
@@ -156,16 +178,19 @@ header > img {
 .items{
     width: 100%;
     height: 731px;
+    background-color: white;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: auto;
 }
 
-.items > .head-text{
-    margin-top: 39px;
+.head-text{
+    margin: 0;
+    margin-bottom: 39px;
     display: flex;
     font-size: 60px;
     font-weight: 900;
@@ -237,6 +262,12 @@ header > img {
     margin-top: 159px;
 }
 
+.about-us-img{
+    width: 969px;
+    height: 832px;
+    background-image: url("assets/img/peoples-big.png");
+}
+
 footer{
     width: 100%;
     height: 265px;
@@ -244,6 +275,7 @@ footer{
 
 .contacts-text{
     font-size: 25px;
+    margin: 0;
 }
 
 .contacts-bold-text{
@@ -252,20 +284,18 @@ footer{
 }
 
 #contacts{
+    width: 100%;
+    height: 265px;
     display: flex;
     align-items: center;
     background-color: white;
-    justify-content: space-between;
-}
-
-.block-of-text{
-    margin-left: 65px;
+    justify-content: space-evenly;
+    gap: calc(100% - 1200px);
 }
 
 .sociales{
     display: flex;
     flex-direction: column;
-    margin-right: 206px;
     gap: 10px;
 }
 
@@ -279,6 +309,230 @@ footer{
     font-size: 25px;
 }
 
+@media (min-width: 290px) and (max-width: 440px){
+    .main-body{
+        background-size: 100% 1025px;
+        font-size: 9px;
+    }
+
+    header{
+        height: 62px;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 25px;
+        height: 17px;
+    }
+
+    .header-buttons{
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .mainWH{
+        padding: 10px 9px 10px 9px;
+    }
+    
+    .itemsH{
+        padding: 10px 9px 10px 9px;
+    }
+    
+    .aboutH{
+        padding: 10px 12px 10px 12px;
+    }
+    
+    .catalogH{
+        padding: 10px 9px 10px 9px;
+    }
+    
+    .regH{
+        padding: 10px 7px 10px 7px;
+    }
+    
+    .contactsH{
+        padding: 10px 9px 10px 9px;
+    }
+
+    .hello-screen{
+        width: 100%;
+        height: 251px;
+        gap: 15px;
+    }
+
+    .logo-placeholder{
+        width: 100%;
+        height: 33px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hello-screen-img{
+        width: 162px;
+        height: 122px;
+        margin: 0;
+    }
+
+    .light-text{
+        width: 163px;
+        font-size: 10px;
+    }
+
+    .big-text{
+        width: 163px;
+        font-size: 15px;
+    }
+
+    .left-text{
+        width: 172px;
+    }
+
+    .inter-fact{
+        width: 171px;
+    }
+
+    .left-text-buttons{
+        gap: 5px;
+        margin: 0;
+    }
+
+    .left-text-button{
+        font-size: 8px;
+        border-radius: 15px;
+        width: 80px;
+        height: 15px;
+        padding: 0;
+    }
+
+    .more-info{
+        border-width: 2px;
+    }
+
+    .head-text{
+        font-size: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .items{
+        height: 100%;
+        padding-bottom: 2px;
+    }
+
+    .cards{
+        display: flex;
+        gap: 20px;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+
+    .card-description{
+        height: 55px;
+        width: 91px;
+    }
+
+    .type-of-card{
+        font-size: 10px;
+    }
+
+    .items-more-info{
+        width: 95px;
+        height: 15px;
+        padding: 0;
+        font-size: 10px;
+        margin: 8px 3px 0px 3px;
+    }
+
+    .banana-ropa-img{
+        width: 30px;
+        height: 48px;
+    }
+
+    .fresh-banana-img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .text-box-about{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .banana-cup-img{
+        width: 55px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    .banana-car-img{
+        width: 74px;
+        height: 48px;
+    }
+
+    .about-us{
+        height: 100%;
+        background-size: 1500px 100%;
+    }
+
+    .head-text-about{
+        font-size: 20px;
+        width: 100%
+    }
+
+    .text-about{
+        margin-top: 35px;
+    }
+
+    .about-us-img{
+        width: 0;
+        height: 0;
+    }
+
+    footer{
+        height: 60px;
+    }
+
+    #contacts{
+        width: 100%;
+        height: 60px;
+        gap: calc(100% - 300px);
+    }
+
+    .contacts-text{
+        font-size: 7px;
+        width: 156px;
+    }
+
+    .sociales{
+        gap: 5px;
+    }
+
+    .soc-text{
+        font-size: 7px;
+        margin-left: 5px;
+    }
+
+    .contacts-bold-text{
+        margin-bottom: 10px;
+    }
+
+    .contact-icon{
+        width: 12px;
+        height: 12px;
+    }
+}
+
 /*
     Дальше стили для каталога
 */
@@ -286,11 +540,13 @@ footer{
 .catalog-body{
     background-image: url("./assets/img/fWindow.png");
     background-size: 1920px 2222px;
+    font-family: "Jost", sans-serif;
 }
 
 .catalog-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .mainWHB{
@@ -311,7 +567,7 @@ footer{
 .filters{
     display: flex;
     width: 547px;
-    height: 995px;
+    height: 1600px;
     flex-direction: column;
     align-items: center;
     border-right: 2px solid white;
@@ -508,6 +764,15 @@ hr {
     transform: translateY(-50%); 
 }
 
+.filter{
+    height: 109px;
+    margin-top: 25px;
+}
+
+.filter-menu-button:focus + .black-back{
+    display: block;
+}
+
 .cards-catalog{
     display: flex;
     width: 1373px;
@@ -548,139 +813,205 @@ hr {
     margin: 0;
 }
 
-.card-image-catalog-1{
-    height: 480px;
-    width: 404px;
+/*
+    Одежда
+*/
+
+.card-image-catalog-ropa-1{
     background-image: url("./assets/img/t-shirts/t-shirt-1.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-2{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-2{
     background-image: url("./assets/img/t-shirts/t-shirt-2.png");
-    background-size: 342px 404px;
-    background-repeat: no-repeat;
-    background-position: 33px 50px;
 }
 
-.card-image-catalog-3{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-3{
     background-image: url("./assets/img/t-shirts/t-shirt-3.png");
-    background-size: 334px 404px;
-    background-repeat: no-repeat;
-    background-position: 33px;
 }
 
-.card-image-catalog-4{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-4{
     background-image: url("./assets/img/t-shirts/t-shirt-4.png");
-    background-size: 340px 404px;
-    background-repeat: no-repeat;
-    background-position: 33px 30px;
 }
 
-.card-image-catalog-5{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-5{
     background-image: url("./assets/img/t-shirts/t-shirt-5.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-6{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-6{
     background-image: url("./assets/img/t-shirts/t-shirt-6.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-7{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-7{
     background-image: url("./assets/img/t-shirts/t-shirt-7.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-8{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-8{
     background-image: url("./assets/img/t-shirts/t-shirt-8.png");
-    background-size: 394px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-9{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-9{
     background-image: url("./assets/img/t-shirts/t-shirt-9.png");
-    background-size: 301px 404px;
-    background-repeat: no-repeat;
-    background-position: 55px 30px;
 }
 
-.card-image-catalog-10{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-10{
     background-image: url("./assets/img/t-shirts/t-shirt-3.png");
-    background-size: 334px 404px;
-    background-repeat: no-repeat;
-    background-position: 33px;
 }
 
-.card-image-catalog-11{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-11{
     background-image: url("./assets/img/t-shirts/t-shirt-5.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-12{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-12{
     background-image: url("./assets/img/t-shirts/t-shirt-7.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-13{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-13{
     background-image: url("./assets/img/t-shirts/t-shirt-9.png");
-    background-size: 301px 404px;
-    background-repeat: no-repeat;
-    background-position: 55px 30px;
 }
 
-.card-image-catalog-14{
-    height: 480px;
-    width: 404px;
+.card-image-catalog-ropa-14{
     background-image: url("./assets/img/t-shirts/t-shirt-1.png");
-    background-size: 404px 404px;
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
-.card-image-catalog-15{
+.card-image-catalog-ropa-15{
+    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
+}
+
+/*
+    Бананы
+*/
+
+.card-image-catalog-banana-1{
+    background-image: url("./pages/banana/t2/INDEX.html/banan1.jpeg");
+}
+
+.card-image-catalog-banana-2{
+    background-image: url("./pages/banana/t2/INDEX.html/banan14.png");
+}
+
+.card-image-catalog-banana-3{
+    background-image: url("./pages/banana/t2/INDEX.html/banan13.png");
+}
+
+.card-image-catalog-banana-4{
+    background-image: url("./pages/banana/t2/INDEX.html/banan12.png");
+}
+
+.card-image-catalog-banana-5{
+    background-image: url("./pages/banana/t2/INDEX.html/banan11.png");
+}
+
+.card-image-catalog-banana-6{
+    background-image: url("./pages/banana/t2/INDEX.html/banan10.png");
+}
+
+.card-image-catalog-banana-7{
+    background-image: url("./pages/banana/t6/INDEX.html/banan9.png");
+}
+
+.card-image-catalog-banana-8{
+    background-image: url("./pages/banana/t6/INDEX.html/banan8.png");
+}
+
+.card-image-catalog-banana-9{
+    background-image: url("./pages/banana/t6/INDEX.html/banan7.png");
+}
+
+.card-image-catalog-banana-10{
+    background-image: url("./pages/banana/t6/INDEX.html/banan6.png");
+}
+
+.card-image-catalog-banana-11{
+    background-image: url("./pages/banana/t6/INDEX.html/banan5.png");
+}
+
+.card-image-catalog-banana-12{
+    background-image: url("./pages/banana/t6/INDEX.html/banan4.png");
+}
+
+.card-image-catalog-banana-13{
+    background-image: url("./pages/banana/t6/INDEX.html/banan3.png");
+}
+
+.card-image-catalog-banana-14{
+    background-image: url("./pages/banana/t6/INDEX.html/banan2.png");
+}
+
+.card-image-catalog-banana-15{
+    background-image: url("./pages/banana/t2/INDEX.html/banan15.png");
+}
+
+/*
+    Кружки
+*/
+
+.card-image-catalog-cup-1{
+    background-image: url("./pages/cup/o1/heder/kruzka1.jpg");
+}
+
+.card-image-catalog-cup-2{
+    background-image: url("./pages/cup/o1/heder/kruzka2.jpg");
+}
+
+.card-image-catalog-cup-3{
+    background-image: url("./pages/cup/o4/heder/kruzka4.png");
+}
+
+.card-image-catalog-cup-4{
+    background-image: url("./pages/cup/o4/heder/kruzka5.png");
+}
+
+.card-image-catalog-cup-5{
+    background-image: url("./pages/cup/o4/heder/kruzka6.png");
+}
+
+.card-image-catalog-cup-6{
+    background-image: url("./pages/cup/o7/heder/kruzka7.png");
+}
+
+.card-image-catalog-cup-7{
+    background-image: url("./pages/cup/o7/heder/kruzka8.png");
+}
+
+.card-image-catalog-cup-8{
+    background-image: url("./pages/cup/o7/heder/kruzka9.png");
+}
+
+.card-image-catalog-cup-9{
+    background-image: url("./pages/cup/o7/heder/kruzka10.png");
+}
+
+.card-image-catalog-cup-10{
+    background-image: url("./pages/cup/o7/heder/kruzka11.png");
+}
+
+.card-image-catalog-cup-11{
+    background-image: url("./pages/cup/o7/heder/kruzka12.png");
+}
+
+.card-image-catalog-cup-12{
+    background-image: url("./pages/cup/o7/heder/kruzka13.png");
+}
+
+.card-image-catalog-cup-13{
+    background-image: url("./pages/cup/o7/heder/kruzka14.png");
+}
+
+.card-image-catalog-cup-14{
+    background-image: url("./pages/cup/o7/heder/kruzka15.png");
+}
+
+.card-image-catalog-cup-15{
+    background-image: url("./pages/cup/o1/heder/kruzka2.jpg");
+}
+
+.card-image-catalog-size{
     height: 480px;
     width: 404px;
-    background-image: url("./assets/img/t-shirts/t-shirt-3.png");
     background-size: 334px 404px;
     background-repeat: no-repeat;
     background-position: 33px;
+    border-radius: 33px;
 }
 
 .card-description-catalog{
@@ -702,6 +1033,10 @@ hr {
     color: #4C312F;
 }
 
+.card-catalog-opZ{
+    display: none;
+}
+
 .card-button-catalog:hover {
     cursor: pointer;
 }
@@ -712,4 +1047,53 @@ hr {
     background-color: white;
     justify-content: space-between;
     margin-top: 50px;
+}
+
+@media (min-width: 290px) and (max-width: 440px){
+    .filters{
+        display: none;
+    }
+
+    .cards-catalog{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-catalog{
+        width: 150px;
+        height: 200px;
+    }
+
+    .card-price-catalog{
+        font-size: 15px;
+    }
+
+    .card-description-catalog{
+        gap: calc(100% - 120px);
+        white-space: nowrap;
+    }
+    
+    .card-button-catalog{
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .card-image-catalog-size{
+        height: 160px;
+        width: 150px;
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        background-position: 1px;
+    }
+
+    .card-catalog-opZ{
+        display: block;
+        width: 150px;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
 }

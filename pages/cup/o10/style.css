@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+
+body{
+    margin: 0;
+    color: #4C312F;
+}
+
+a{
+    color: #4C312F;
+    text-decoration: none;
+}
+
+.editor1{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.editor2{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+}
+
+.editor4{
+    font-weight: 700;
+    margin: 0;
+ }
+.editor6{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+.editor7{
+    font-size: 40px;
+    margin: 0;
+}
+.editor8{
+    font-size: 40px;
+    margin: 0;
+}
+
+.edit1{
+    color: #4C312F;
+}
+.background-first{
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid white;
+    height: 85px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+header > img {
+    margin-left: 50px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   gap: 50px;
+    font-family: 'Jost', serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header-button{
+    border-left: 1px solid white;
+}
+
+.header-button-reg{
+    border-right: 1px solid white;
+}
+
+.mainWH{
+    padding: 29px 44px 29px 44px;
+}
+
+ul{
+    list-style: none;
+}
+
+.itemsH{
+    padding: 29px 30px 29px 30px;
+}
+
+.aboutH{
+    padding: 29px 67px 29px 67px;
+}
+
+.catalogH{
+    padding: 29px 67px 29px 67px;
+}
+
+.regH{
+    padding: 29px 70px 29px 70px;
+}
+
+.contactsH{
+    padding: 29px 32px 29px 32px;
+}
+.arrow{
+    display: flex;
+    gap: 50px;
+    width: 122px;
+    height: 122px;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 50px;
+    width: auto;
+    height: 983px;
+    color: #4C312F;
+    background-color: white;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+    color: #EFB351;
+}
+.buy{
+    border-radius: 50px;
+    background-color: #EFB351;
+    width: 396px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.basket{
+    border-radius: 50px;
+    background-color: #EFB351;
+    width: 396px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+.specific{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: flex-start;
+}
+.list{
+    display: flex;
+	flex-direction: column;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 50px;
+    gap: 50px;
+    width: auto;
+    height: 436px;
+    color: black;
+    background-color: white;
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: white;
+    width: avto;
+    height: 265px;
+}
+.name{
+    gap: 50px;
+    color: #4C312F;
+}
+.con{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #4C312F;
+}
+.contacts1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.contacts2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}

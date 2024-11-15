@@ -1,0 +1,284 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Jost", sans-serif;
+    color: #4C312F;
+}
+
+a{
+    text-decoration: none;
+    color: #4C312F;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;  
+}
+
+body::-webkit-scrollbar-track {
+    background: #4C312F;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #EFB351;
+    border-radius: 20px;
+    border: 2px solid #4C312F;
+}
+
+.background-first{
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid white;
+    height: 85px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+header > img {
+    margin-left: 50px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header-button{
+    border-left: 1px solid white;
+}
+
+.header-button-reg{
+    border-right: 1px solid white;
+}
+
+.mainWH{
+    padding: 29px 44px 29px 44px;
+}
+
+.itemsH{
+    padding: 29px 30px 29px 30px;
+}
+
+.aboutH{
+    padding: 29px 67px 29px 67px;
+}
+
+.catalogH{
+    padding: 29px 67px 29px 67px;
+}
+
+.regH{
+    padding: 29px 70px 29px 70px;
+}
+
+.contactsH{
+    padding: 29px 32px 29px 32px;
+}
+
+.imgback{
+    padding: 111px 0px 111px 59px;
+}
+
+.card-product{
+    display: flex;
+    width: 1850px;
+    height: 977px;
+    background-color: white;
+    border-radius: 50px;
+    gap: 183px;
+    margin-bottom: 72px;
+    margin-left: 8px;
+}
+
+.img-banan{
+    padding: 68px 0px 75px 51px;
+}
+
+.text-card-product{
+    padding-top: 68px;
+}
+
+.text-main{
+    width: 610px;
+    height: 72px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 72px;
+    margin-bottom: 20px;
+    margin-top: -8px; 
+}
+
+.text-product{
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: -10px;
+}
+
+.product-value{
+    display: flex;
+    height: 115px;
+    gap: 84px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 43px;
+    margin-left: 7px;
+    font-weight: 500;
+}
+
+.desc-main{
+    display: flex;
+    width: 121px;
+    height: 34px;
+    font-size: 25px;
+    line-height: 36px; 
+    border-bottom: solid 2.8px #4C312F;
+    margin-bottom: 24px;
+    margin-top: 38px
+}
+
+.desc{
+    display: flex;
+    text-align: left;
+    gap: 190px;
+}
+
+.desc1{
+    display: flex;
+    font-size: 25px;
+    line-height: 36px;
+    height: 66px;
+}
+
+.desc2{
+    display: flex;
+    font-size: 25px;
+    line-height: 36px;
+    height: 66px;
+    gap: 7px;
+}
+
+.desc1-text{
+    margin-top: 9px;
+}
+
+.desc2-text{
+    margin-top: 9px;
+}
+
+.imgdesc{
+    margin-top: 5px; 
+}
+
+.cost-banan{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    color: #EFB351;
+    padding-top: 27px;
+}
+
+.style-butt{
+    display: flex;
+    gap: 86px;
+}
+
+.butt-card{
+    width: 396px;
+    height: 76px;
+    border-radius: 47px;
+    border:none;
+    background-color: #EFB351;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: white;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
+
+.card-desc{
+    display: flex;
+    width: 1850px;
+    height: 235px;
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 305px;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.desc-main-text{
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+    padding-left: 51px;
+    padding-top: 15px
+}
+
+.desc-second-text{
+    font-size: 25px;
+    padding-left: 54px;
+    margin-top: 0px
+}
+
+hr{
+    width: 669px;
+    height: 2px;
+    background-color: #4C312F;
+    margin-left: 0px;
+}
+
+footer{
+    width: 100%;
+    height: 265px;
+    background-color: white;
+}
+
+.contacts-text{
+    font-size: 25px;
+}
+
+.contacts-bold-text{
+    margin-bottom: 65px;
+    font-weight: 700;
+}
+
+#contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-of-text{
+    margin-left: 65px;
+}
+
+.sociales{
+    display: flex;
+    flex-direction: column;
+    margin-right: 206px;
+    gap: 10px;
+}
+
+.soc{
+    display: flex;
+    align-items: center;
+}
+
+.soc-text{
+    margin-left: 23px;
+    font-size: 25px;
+}
