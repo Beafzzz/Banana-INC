@@ -1083,7 +1083,7 @@ hr {
         z-index: 100;
         width: calc(100% / 2);
         height: 100%;
-        background-color: #EFB351;
+        background-color: rgb(253,171,97);
     }
 
     .catalog-content{
