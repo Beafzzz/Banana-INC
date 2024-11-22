@@ -97,6 +97,7 @@ header{
 
 .imgback{
     padding: 111px 0px 111px 59px;
+    cursor: pointer;
 }
 
 .card-product{
@@ -119,10 +120,6 @@ header{
     padding-top: 262px;
     padding-left: 49px;
     position: absolute;
-}
-
-.text-card-product{
-    
 }
 
 .text-main{
